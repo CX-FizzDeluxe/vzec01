@@ -45,14 +45,14 @@ public class FizzBuzz {
     			allTrue  = true;
     		}
     		
-    		if(fizz && deluxe && !allTrue && !fakeDeluxe) {
-    			str="fizz deluxe";
-    		}
-    		
-    		if(buzz && deluxe && !allTrue && !fakeDeluxe) {
-    			str = "buzz deluxe";
-    		}
-    		
+//    		if(fizz && deluxe && !allTrue && !fakeDeluxe) {
+//    			str="fizz deluxe";
+//    		}
+//    		
+//    		if(buzz && deluxe && !allTrue && !fakeDeluxe) {
+//    			str = "buzz deluxe";
+//    		}
+//    		
     		if(fizz  && fakeDeluxe) {
     			str = "fizz fake deluxe";
     		}
