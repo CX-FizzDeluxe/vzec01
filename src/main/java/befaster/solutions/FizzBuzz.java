@@ -12,6 +12,7 @@ public class FizzBuzz {
     boolean buzz = false;
     boolean deluxe = false;
     boolean allTrue = false;
+    boolean fakeDeluxe = false;
    
     		if(number%15==0) {
     			str= "fizz buzz"; 
@@ -32,6 +33,9 @@ public class FizzBuzz {
     		if(number>10 && Pattern.matches("^([0-9])\\1*{9}", String.valueOf(number))) {
     			str = "deluxe";
     			deluxe = true;
+    			if(number%2!=0) {
+    				fakeDeluxe = true;
+    			}
     			
     		}
     		if(fizz && buzz && deluxe) {
