@@ -30,7 +30,7 @@ public class FizzBuzz {
     		if (fizz && buzz) {
     			str = "fizz buzz";
     		}
-    		if(number>10 && Pattern.matches("^([0-9])\\1*{9}", String.valueOf(number))) {
+    		if(number>10 && Pattern.matches("^([0-9])\\1{9}", String.valueOf(number))) {
     			str = "deluxe";
     			deluxe = true;
     			if(number%2!=0) {
