@@ -11,6 +11,7 @@ public class FizzBuzz {
     boolean fizz = false;
     boolean buzz = false;
     boolean deluxe = false;
+    boolean allTrue = false;
    
     		if(number%15==0) {
     			str= "fizz buzz"; 
@@ -35,6 +36,15 @@ public class FizzBuzz {
     		}
     		if(fizz && buzz && deluxe) {
     			str = "fizz buzz deluxe";
+    			allTrue  = true;
+    		}
+    		
+    		if(fizz && deluxe && !allTrue) {
+    			str="fizz deluxe";
+    		}
+    		
+    		if(buzz && deluxe && !allTrue) {
+    			str = "buzz deluxe";
     		}
     		
     		
