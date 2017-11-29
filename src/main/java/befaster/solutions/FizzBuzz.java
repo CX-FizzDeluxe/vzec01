@@ -12,6 +12,7 @@ public class FizzBuzz {
     boolean buzz = false;
     boolean deluxe = false;
     boolean allTrue = false;
+    boolean fakeDeluxe = false;
    
     		if(number%15==0) {
     			str= "fizz buzz"; 
@@ -26,28 +27,29 @@ public class FizzBuzz {
     		if((String.valueOf(number).contains("5") && String.valueOf(number).contains("3"))) {
     			str = "fizz buzz";
     		}
-    		if (fizz==true && buzz==true) {
+    		if (fizz && buzz) {
     			str = "fizz buzz";
     		}
     		if(number>10 && Pattern.matches("^([0-9])\\1*{9}", String.valueOf(number))) {
     			str = "deluxe";
     			deluxe = true;
-    			
-    			
-    		}else if(number%2!=0) {
+    			if(number%2!=0) {
     				str= "fake deluxe";
+    				fakeDeluxe = true;
 			}
+    			
+    		}
     		
-    		if(fizz && buzz && deluxe) {
+    		if(fizz && buzz && deluxe && !fakeDeluxe) {
     			str = "fizz buzz deluxe";
     			allTrue  = true;
     		}
     		
-    		if(fizz && deluxe && !allTrue) {
+    		if(fizz && deluxe && !allTrue && !fakeDeluxe) {
     			str="fizz deluxe";
     		}
     		
-    		if(buzz && deluxe && !allTrue) {
+    		if(buzz && deluxe && !allTrue && !fakeDeluxe) {
     			str = "buzz deluxe";
     		}
     		
