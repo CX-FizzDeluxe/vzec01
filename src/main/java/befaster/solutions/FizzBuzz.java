@@ -53,10 +53,10 @@ public class FizzBuzz {
     			str = "buzz deluxe";
     		}
     		
-    		if(fizz && allTrue && fakeDeluxe) {
+    		if(fizz  && fakeDeluxe) {
     			str = "fizz fake deluxe";
     		}
-    		if(buzz && allTrue && fakeDeluxe) {
+    		if(buzz && fakeDeluxe) {
     			str = "buzz fake deluxe";
     		}
     		
