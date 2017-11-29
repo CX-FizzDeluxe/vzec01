@@ -10,7 +10,7 @@ public class FizzBuzz {
     		}else if(number%5==0) {
     			str = "buzz";
     		}else if(number%3==0) {
-    			str = "buzz";
+    			str = "fizz";
     		}
     		
     		return str;
