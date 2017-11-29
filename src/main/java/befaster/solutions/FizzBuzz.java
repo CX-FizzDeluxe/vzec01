@@ -29,8 +29,11 @@ public class FizzBuzz {
     			str = "fizz buzz";
     		}
     		if(number>10) {
-    			
+    		
     			String[] arr = String.valueOf(number).split("");
+    			String first = arr[0];
+    			int len = arr.length;
+    			while ()
     			str = "deluxe";
     			deluxe = true;
     		}
