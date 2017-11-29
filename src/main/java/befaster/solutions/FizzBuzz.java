@@ -12,11 +12,11 @@ public class FizzBuzz {
 		containsBoth = true;
 	}
     		if(number%15==0) {
-    			str= "fizz buzz";
+    			str= "fizz buzz"; 
     			
-    		}else if((number%5==0 || String.valueOf(number).contains("5")) && !containsBoth) {
+    		}else if((number%5==0 || String.valueOf(number).contains("5")) && containsBoth) {
     			str = "buzz";
-    		}else if((number%3==0 || String.valueOf(number).contains("3")) && !containsBoth) {
+    		}else if((number%3==0 || String.valueOf(number).contains("3")) && containsBoth) {
     			str = "fizz";
     		}
     		
