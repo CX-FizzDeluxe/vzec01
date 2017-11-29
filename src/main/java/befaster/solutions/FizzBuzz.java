@@ -12,10 +12,10 @@ public class FizzBuzz {
     		if(number%15==0) {
     			str= "fizz buzz"; 
     			
-    		}else if(number%5==0 || String.valueOf(number).contains("5")) {
+    		} if(number%5==0 || String.valueOf(number).contains("5")) {
     			str = "buzz";
     			buzz = true;
-    		}else if(number%3==0 || String.valueOf(number).contains("3")) {
+    		} if(number%3==0 || String.valueOf(number).contains("3")) {
     			str = "fizz";
     			fizz= true;
     		}
