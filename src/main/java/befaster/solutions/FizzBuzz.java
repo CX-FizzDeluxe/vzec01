@@ -5,14 +5,16 @@ public class FizzBuzz {
 
     public static String fizzBuzz(Integer number) {
     	String str = String.valueOf(number);
-    	boolean fizzBuzz = false;
-    		if(number%15==0 || (number%10==5 && number%10==3)) {
+   
+    		if(number%15==0) {
     			str= "fizz buzz";
-    			fizzBuzz = true;
-    		}else if((number%5==0 || number%10==5) && !fizzBuzz) {
+    			
+    		}else if((number%5==0 || number%10==5)) {
     			str = "buzz";
-    		}else if((number%3==0 || number%10==3) && !fizzBuzz) {
+    		}else if((number%3==0 || number%10==3)) {
     			str = "fizz";
+    		}else if(number%10==5 && number%10==3) {
+    			str = "fizz buzz";
     		}
     		
     		return str;
