@@ -34,7 +34,7 @@ public class FizzBuzz {
     			String first = arr[0];
     			int len = arr.length;
     			
-    			for(int i=0 ; i< len && !deluxe ;i++) {
+    			for(int i=0 ; i< len && deluxe ;i++) {
     				deluxe = arr[i] == first && deluxe;
     			}
     			if(deluxe)
