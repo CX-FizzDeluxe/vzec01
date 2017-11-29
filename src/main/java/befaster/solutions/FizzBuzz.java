@@ -1,5 +1,7 @@
 package befaster.solutions;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.regex.Pattern;
 
 public class FizzBuzz {
@@ -26,7 +28,9 @@ public class FizzBuzz {
     		if (fizz==true && buzz==true) {
     			str = "fizz buzz";
     		}
-    		if(number>10 && Pattern.matches("^([0-9])\\1*$", String.valueOf(number))) {
+    		if(number>10) {
+    			
+    			String[] arr = String.valueOf(number).split("");
     			str = "deluxe";
     			deluxe = true;
     		}
