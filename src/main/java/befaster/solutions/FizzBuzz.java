@@ -40,7 +40,7 @@ public class FizzBuzz {
     			
     		}
     		
-    		if(fizz && buzz && deluxe && !fakeDeluxe) {
+    		if(fizz && buzz && deluxe && fakeDeluxe) {
     			str = "fizz buzz deluxe";
     			allTrue  = true;
     		}
