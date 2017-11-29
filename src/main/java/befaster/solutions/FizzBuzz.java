@@ -28,18 +28,9 @@ public class FizzBuzz {
     		if (fizz==true && buzz==true) {
     			str = "fizz buzz";
     		}
-    		if(number>10) {
+    		if(number>10 && Pattern.matches("", String.valueOf(number))) {
     		
-    			String[] arr = String.valueOf(number).split("");
-    			String first = arr[0];
-    			int len = arr.length;
     			
-    			for(int i=0 ; i< len && deluxe ;i++) {
-    				deluxe = arr[i] == first && deluxe;
-    			}
-    			if(deluxe)
-    			str = "deluxe";
-    			deluxe = true;
     		}
     		if(fizz && buzz && deluxe) {
     			str = "fizz buzz deluxe";
