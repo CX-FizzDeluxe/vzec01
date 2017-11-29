@@ -19,7 +19,10 @@ public class FizzBuzz {
     			str = "fizz";
     			fizz= true;
     		}
-    		if((String.valueOf(number).contains("5") && String.valueOf(number).contains("3"))|| (fizz && buzz)) {
+    		if((String.valueOf(number).contains("5") && String.valueOf(number).contains("3"))) {
+    			str = "fizz buzz";
+    		}
+    		if (fizz==true && buzz==true) {
     			str = "fizz buzz";
     		}
     		
