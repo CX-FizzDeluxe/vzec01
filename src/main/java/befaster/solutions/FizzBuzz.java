@@ -1,5 +1,6 @@
 package befaster.solutions;
 
+import java.util.regex.Pattern;
 
 public class FizzBuzz {
 
@@ -7,7 +8,7 @@ public class FizzBuzz {
     	String str = String.valueOf(number);
     boolean fizz = false;
     boolean buzz = false;
-    
+    boolean deluxe = false;
    
     		if(number%15==0) {
     			str= "fizz buzz"; 
@@ -24,6 +25,13 @@ public class FizzBuzz {
     		}
     		if (fizz==true && buzz==true) {
     			str = "fizz buzz";
+    		}
+    		if(number>10 && Pattern.matches("^([0-9])\1*$", String.valueOf(number))) {
+    			str = "deluxe";
+    			deluxe = true;
+    		}
+    		if(fizz && buzz && deluxe) {
+    			str = "fizz buzz deluxe";
     		}
     		
     		return str;
