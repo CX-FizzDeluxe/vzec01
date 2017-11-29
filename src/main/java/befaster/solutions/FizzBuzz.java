@@ -33,7 +33,11 @@ public class FizzBuzz {
     			String[] arr = String.valueOf(number).split("");
     			String first = arr[0];
     			int len = arr.length;
-    			while ()
+    			
+    			for(int i=0 ; i< len && !deluxe ;i++) {
+    				deluxe = arr[i] == first && deluxe;
+    			}
+    			if(deluxe)
     			str = "deluxe";
     			deluxe = true;
     		}
