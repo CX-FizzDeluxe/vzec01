@@ -13,16 +13,15 @@ public class FizzBuzz {
     boolean deluxe = false;
     boolean allTrue = false;
     boolean fakeDeluxe = false;
-    boolean repeatingDeluxe = false;
    
     		if(number%15==0) {
     			str= "fizz buzz"; 
     			
     		} if(number%5==0 || String.valueOf(number).contains("5")) {
-    			str = "buzz";
+    			str = "buzz deluxe";
     			buzz = true;
     		} if(number%3==0 || String.valueOf(number).contains("3")) {
-    			str = "fizz";
+    			str = "fizz deluxe";
     			fizz= true;
     		}
     		if((String.valueOf(number).contains("5") && String.valueOf(number).contains("3"))) {
