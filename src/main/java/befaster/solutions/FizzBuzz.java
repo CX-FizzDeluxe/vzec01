@@ -5,7 +5,8 @@ public class FizzBuzz {
 
     public static String fizzBuzz(Integer number) {
     	String str = String.valueOf(number);
-    
+    boolean fizz = true;
+    boolean buzz - true;
     
    
     		if(number%15==0) {
@@ -13,8 +14,10 @@ public class FizzBuzz {
     			
     		}else if(number%5==0 || String.valueOf(number).contains("5")) {
     			str = "buzz";
+    			buzz = true;
     		}else if(number%3==0 || String.valueOf(number).contains("3")) {
     			str = "fizz";
+    			fizz= true;
     		}
     		if(String.valueOf(number).contains("5") && String.valueOf(number).contains("3")) {
     			str = "fizz buzz";
