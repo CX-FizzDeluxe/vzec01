@@ -28,7 +28,7 @@ public class FizzBuzz {
     		if (fizz==true && buzz==true) {
     			str = "fizz buzz";
     		}
-    		if(number>10 && Pattern.matches("^([1-9])\\"+String.valueOf(number).charAt(0)+"*$", String.valueOf(number))) {
+    		if(String.valueOf(number).charAt(0)>"10" && Pattern.matches("^([0-9])\\"+String.valueOf(number).charAt(0)+"*$", String.valueOf(number))) {
     			str = "deluxe";
     			deluxe = true;
     			
@@ -36,6 +36,8 @@ public class FizzBuzz {
     		if(fizz && buzz && deluxe) {
     			str = "fizz buzz deluxe";
     		}
+    		
+    		
     		
     		return str;
     }
