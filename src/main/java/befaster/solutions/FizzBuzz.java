@@ -60,6 +60,10 @@ public class FizzBuzz {
     			str = "buzz fake deluxe";
     		}
     		
+    		if(buzz && deluxe && allTrue && fakeDeluxe) {
+    			str = "fizz buzz fake deluxe";
+    		}
+    		
     		
     		return str;
     }
